@@ -2,4 +2,7 @@
 
 |      #      | Folder Link  | Assignment Description                              |
 | :---------: | ------------ | --------------------------------------------------- |
-| [01](https://docs.google.com/spreadsheets/d/1n1uf3ECitwr9EZwOSsWEhkWfyLMJYezI99-lfbGYo8U/edit#gid=0) | [A01](https://docs.google.com/spreadsheets/d/1n1uf3ECitwr9EZwOSsWEhkWfyLMJYezI99-lfbGYo8U/edit#gid=0) | [Establishing Communication.] (https://docs.google.com/spreadsheets/d/1n1uf3ECitwr9EZwOSsWEhkWfyLMJYezI99-lfbGYo8U/edit#gid=0)                | :heavy_check_mark: |
+| [01](https://docs.google.com/spreadsheets/d/1n1uf3ECitwr9EZwOSsWEhkWfyLMJYezI99-lfbGYo8U/edit#gid=0) 
+| [A01](https://docs.google.com/spreadsheets/d/1n1uf3ECitwr9EZwOSsWEhkWfyLMJYezI99-lfbGYo8U/edit#gid=0) 
+| [Establishing Communication.] (https://docs.google.com/spreadsheets/d/1n1uf3ECitwr9EZwOSsWEhkWfyLMJYezI99-lfbGYo8U/edit#gid=0)                
+| :heavy_check_mark: |
