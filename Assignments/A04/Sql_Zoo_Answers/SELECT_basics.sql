@@ -1,3 +1,10 @@
+/**
+* Loic Konan
+* 5303 Database Mgmt Systems.
+* Select Basiscs in SQL.
+* 09/10/2021
+*/
+
 SELECT population FROM world WHERE name = 'Germany';
 
 SELECT name, population FROM world WHERE name IN ('Sweden', 'Norway','Denmark');

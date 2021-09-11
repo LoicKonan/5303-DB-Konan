@@ -1,3 +1,10 @@
+/**
+* Loic Konan
+* 5303 Database Mgmt Systems.
+* Join Operations in SQL.
+* 09/10/2021
+*/
+
 SELECT matchid, player FROM goal WHERE teamid = 'GER';
 
 SELECT id,stadium,team1,team2 FROM game WHERE id = 1012;

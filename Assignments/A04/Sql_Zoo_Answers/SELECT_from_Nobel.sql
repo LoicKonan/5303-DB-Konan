@@ -1,3 +1,10 @@
+/**
+* Loic Konan
+* 5303 Database Mgmt Systems.
+* Select from Nobel in SQL.
+* 09/10/2021
+*/
+
 SELECT yr, subject, winner FROM nobel WHERE yr = 1950;
 
 SELECT winner FROM nobel WHERE yr = 1962 AND subject = 'Literature';
