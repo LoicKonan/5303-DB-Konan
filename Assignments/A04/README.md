@@ -9,7 +9,7 @@
 
 ### Files
 
-|   #   | File                               | Description                        | Status                  |
-| :---: | ---------------------------------- | ---------------------------------- | ----------------------- |
-|   1   | [Data_Files](Data_Files)           | Data files                         | :ballot_box_with_check: |
-|   2   | [Sql_Zoo_Answers](Sql_Zoo_Answers) | The answers for the SqlZoo website | :ballot_box_with_check: |
+|   #   | File                               | Description                                           | Status                  |
+| :---: | ---------------------------------- | ----------------------------------------------------- | ----------------------- |
+|   1   | [Data_Files](Data_Files)           | Used these Data files to create my own local DataBase | :ballot_box_with_check: |
+|   2   | [Sql_Zoo_Answers](Sql_Zoo_Answers) | The answers for the SqlZoo website                    | :ballot_box_with_check: |
