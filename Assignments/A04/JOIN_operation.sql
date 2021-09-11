@@ -1,7 +1,7 @@
 /*
 Loic Konan
 * 5303 - Database Mgmt Systems
-* SELECT from Nobel
+* Join Operation
 * 09/10/2021
 */
 
