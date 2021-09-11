@@ -1,3 +1,10 @@
+/*
+Loic Konan
+* 5303 - Database Mgmt Systems
+* SELECT from Nobel
+* 09/10/2021
+*/
+
 SELECT SUM(population) FROM world;
 
 SELECT DISTINCT(continent) FROM world;
