@@ -1,4 +1,4 @@
-## Assignment 4 - SqlZoo
+## Assignment 4 - SqlZoo Answers.
 
 ### Loic Konan
 
