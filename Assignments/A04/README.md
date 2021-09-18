@@ -13,3 +13,6 @@
 | :---: | ---------------------------------- | ----------------------------------------------------- | ----------------------- |
 |   1   | [Data_Files](Data_Files)           | Used these Data files to create my own local DataBase | :ballot_box_with_check: |
 |   2   | [Sql_Zoo_Answers](Sql_Zoo_Answers) | The answers for the SqlZoo website                    | :ballot_box_with_check: |
+|   3   | [main.py](main.py)                 |                                                       | :ballot_box_with_check: |
+|   4   | [main2.py](main2.py)               |                                                       | :ballot_box_with_check: |
+|   5   | [mysqlCnx.py](mysqlCnx.py)         |                                                       | :ballot_box_with_check: |
