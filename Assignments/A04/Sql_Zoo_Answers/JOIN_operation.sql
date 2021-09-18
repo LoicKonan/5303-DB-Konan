@@ -1,5 +1,5 @@
 /**
-* Loic Konan
+* Loic Konan.
 * 5303 Database Mgmt Systems.
 * Join Operations in SQL.
 * 09/10/2021
