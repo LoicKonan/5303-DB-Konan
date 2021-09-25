@@ -4,9 +4,8 @@
 
 #### Description
 
-- Create a local database of the SqlZoo data using the data files located at the following address: <https://cs.msutexas.edu/~griffin/data/SqlZoo/>
+- Created a local database of the SqlZoo data using the data files located at the following address: <https://cs.msutexas.edu/~griffin/data/SqlZoo/>
 - Created Queries to answer each of the questions from this website <https://sqlzoo.net>
-- 
 
 ### Files
 
