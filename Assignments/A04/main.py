@@ -20,26 +20,21 @@ class Tut(BaseModel):
     author: str
     submission_date: str
 
-
-
 #####################################################
-# LOCAL DB
-basics = {
-    1 : {"sql":"SELECT SUM(population) FROM world","question":"Show the total population of the world."},
-    2 : "select * from some table2",
-    3 : {"question":"Which countries are not too small and not too big? BETWEEN allows range checking (range specified is inclusive of boundary values). The example below shows countries with an area of 250,000-300,000 sq. km. Modify it to show the country and the area for countries with an area between 200,000 and 250,000.",
-        "sql":"SELECT name, area FROM world WHERE area BETWEEN 200000 AND 250000"}
-    }
-
-
-
-##### END NEW STUFF #######
 
 class Item(BaseModel):
     id: Optional[int] = None
     name: Optional[str] = None
     price: float
     brand: str
+
+def runQuery(group,item_id=None):
+    sql = f"SELECT * FROM sql_zoo where `group` = '{group}'"
+    if id:
+        sql += f" and `id` = '{item_id}'"
+
+    res = cnx.query(sql)
+    return res
 
 app = FastAPI()
 
@@ -50,8 +45,6 @@ async def root():
 
 @app.get("/items/")
 async def read_item():
-    ##
-    ##
     return {"ids": [1,2,3,4,5,6,7]}  
 
 @app.get("/items/{item_id}")
@@ -73,11 +66,44 @@ async def create_item(item: Item):
 @app.get("/basics/")
 async def read_item():
      # run stuff here
-    return {"runs all sql": [1,2,3,4,5,6,7]}  
+    return {"runs all sql": [1,2,3]} 
+
+
+#####################
+# I added those below.
+#####################
+
+@app.get("/world/")
+async def read_item():
+     # run stuff here
+    return {"runs all sql": [1,2,3,4,5,6,7,8,9,10,11,12,13]}  
+
+
+@app.get("/nobel/")
+async def read_item():
+     # run stuff here
+    return {"runs all sql": [1,2,3,4,5,6,7,8,9,10,11,12,13,14]} 
+
+
+@app.get("/select/")
+async def read_item():
+     # run stuff here
+    return {"runs all sql": [1,2,3,4,5,6,7,8,9,10]} 
+
+
+@app.get("/sum and count/")
+async def read_item():
+     # run stuff here
+    return {"runs all sql": [1,2,3,4,5,6,7,8]} 
+
+
+@app.get("/join/")
+async def read_item():
+     # run stuff here
+    return {"runs all sql": [1,2,3,4,5,6,7,8,9,10,11,12,13]} 
 
 
 ##### NEW STUFF BELOW ######
-
 # @app.get("/basics/{item_id}")
 # async def read_item(item_id:int):
 #     sql = basics[item_id]['sql']
@@ -114,6 +140,141 @@ async def read_item(item_id:int):
 
     return response
 
+
+
+##########################
+# Added those below again.
+##########################
+
+@app.get("/world/")
+async def read_item():
+    sql = f"SELECT * FROM sql_zoo where `group` = 'world'"
+    print(sql)
+    res = cnx.query(sql)
+
+    sql = res['data'][0]['sql']
+    question = res['data'][0]['question']
+
+
+    res = cnx.query(sql)
+
+    response = {
+        'result':res['data'],
+        'question':question,
+        'sql':sql
+    }
+
+
+    return response
+
+@app.get("/world/{item_id}")
+async def read_item(item_id:int):
+    sql = f"SELECT * FROM sql_zoo where `group` = 'world' and `id` = '{item_id}'"
+    print(sql)
+    res = cnx.query(sql)
+
+    sql = res['data'][0]['sql']
+    question = res['data'][0]['question']
+
+
+    res = cnx.query(sql)
+
+    response = {
+        'result':res['data'],
+        'question':question,
+        'sql':sql
+    }
+
+
+    return response
+
+
+
+@app.get("/nobel/{item_id}")
+async def read_item(item_id:int):
+    sql = f"SELECT * FROM sql_zoo where `group` = 'nobel' and `id` = '{item_id}'"
+    print(sql)
+    res = cnx.query(sql)
+
+    sql = res['data'][0]['sql']
+    question = res['data'][0]['question']
+
+
+    res = cnx.query(sql)
+
+    response = {
+        'result':res['data'],
+        'question':question,
+        'sql':sql
+    }
+
+
+    return response
+
+
+
+@app.get("/select/{item_id}")
+async def read_item(item_id:int):
+    sql = f"SELECT * FROM sql_zoo where `group` = 'select' and `id` = '{item_id}'"
+    print(sql)
+    res = cnx.query(sql)
+
+    sql = res['data'][0]['sql']
+    question = res['data'][0]['question']
+
+
+    res = cnx.query(sql)
+
+    response = {
+        'result':res['data'],
+        'question':question,
+        'sql':sql
+    }
+
+
+    return response
+
+
+
+@app.get("/sum_and_count/{item_id}")
+async def read_item(item_id:int):
+    res = cnx.query(f"SELECT * FROM sql_zoo where `group` = 'sum and count' and `id` = '{item_id}'")
+
+    sql = res['data'][0]['sql']
+    question = res['data'][0]['question']
+
+
+    res = cnx.query(sql)
+
+    response = {
+        'result':res['data'],
+        'question':question,
+        'sql':sql
+    }
+
+
+    return response
+
+
+
+@app.get("/join/{item_id}")
+async def read_item(item_id:int):
+    res = cnx.query(f"SELECT * FROM sql_zoo where `group` = 'join' and `id` = '{item_id}'")
+
+    sql = res['data'][0]['sql']
+    question = res['data'][0]['question']
+
+
+    res = cnx.query(sql)
+
+    response = {
+        'result':res['data'],
+        'question':question,
+        'sql':sql
+    }
+
+
+    return response
 
 # Post route we call from postman
 # Tut is defined above by pydantic
