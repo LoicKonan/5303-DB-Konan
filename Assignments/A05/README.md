@@ -23,7 +23,7 @@
 
 ### Schema
 
-<img src="pic.png" width="600">
+> - <img src="pic.png" width="600">
 
 ### References
 
