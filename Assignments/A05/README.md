@@ -23,8 +23,8 @@
 
 |   #   | File                                                                                                   | Description | Status                  |
 | :---: | ------------------------------------------------------------------------------------------------------ | ----------- | ----------------------- |
-|   1   | [<https://realpython.com/python-mysql](<https://realpython.com/python-mysql)                           |             | :ballot_box_with_check: |
+|   1   | [https://realpython.com/python-mysql](https://realpython.com/python-mysql)                             |             | :ballot_box_with_check: |
 |   2   | [https://realpython.com/fastapi-python-web-apis](https://realpython.com/fastapi-python-web-apis)       |             | :ballot_box_with_check: |
 |   3   | [https://realpython.com/api-integration-in-python/](https://realpython.com/api-integration-in-python/) |             | :ballot_box_with_check: |
-|   4   | [<https://realpython.com/python-encodings-guide/](<https://realpython.com/python-encodings-guide/)     |             | :ballot_box_with_check: |
+|   4   | [https://realpython.com/python-encodings-guide/](https://realpython.com/python-encodings-guide/)       |             | :ballot_box_with_check: |
 |   4   | [https://datasets.imdbws.com/](https://datasets.imdbws.com/)                                           |             | :ballot_box_with_check: |
