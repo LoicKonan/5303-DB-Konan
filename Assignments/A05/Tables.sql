@@ -109,7 +109,7 @@ CREATE TABLE movies_writers
 (
   movies_id INT NOT NULL,
   writers_id INT NOT NULL,
---   PRIMARY KEY (movies_id, writers_id),
+  PRIMARY KEY (movies_id, writers_id),
 --     FOREIGN KEY (movies_id)
 --     FOREIGN KEY (writers_id)
 );
