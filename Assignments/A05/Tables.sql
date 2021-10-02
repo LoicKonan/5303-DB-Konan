@@ -166,19 +166,12 @@ CREATE TABLE person_directors
 -- -----------------------------------------------------
 CREATE TABLE person_actors
 (
-  `person_id` INT NOT NULL,
-  `actors_id` INT NOT NULL,
-  PRIMARY KEY (`person_id`, `actors_id`),
-  INDEX `fk_person_has_actors_actors1_idx` (`actors_id` ASC) VISIBLE,
-  INDEX `fk_person_has_actors_person1_idx` (`person_id` ASC) VISIBLE,
-  CONSTRAINT `fk_person_has_actors_person1`
-    FOREIGN KEY (`person_id`)
-    REFERENCES `movies_db`.`person` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_person_has_actors_actors1`
-    FOREIGN KEY (`actors_id`)
-   );
+  person_id INT NOT NULL,
+  actors_id INT NOT NULL,
+  PRIMARY KEY (person_id, actors_id),
+    -- FOREIGN KEY (person_id)
+    -- FOREIGN KEY (actors_id)
+);
 
 
 -- -----------------------------------------------------
