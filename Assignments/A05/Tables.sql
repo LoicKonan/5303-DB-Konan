@@ -75,25 +75,16 @@ CREATE TABLE rating
 );
 
 -- -----------------------------------------------------
--- Table `movies_db`.`movies_directors`
+-- Table movies_directors
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `movies_db`.`movies_directors` (
-  `movies_id` INT NOT NULL,
-  `directors_id` INT NOT NULL,
-  PRIMARY KEY (`movies_id`, `directors_id`),
-  INDEX `fk_movies_has_directors_directors1_idx` (`directors_id` ASC) VISIBLE,
-  INDEX `fk_movies_has_directors_movies1_idx` (`movies_id` ASC) VISIBLE,
-  CONSTRAINT `fk_movies_has_directors_movies1`
-    FOREIGN KEY (`movies_id`)
-    REFERENCES `movies_db`.`movies` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_movies_has_directors_directors1`
-    FOREIGN KEY (`directors_id`)
-    REFERENCES `movies_db`.`directors` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+CREATE TABLE movies_directors 
+(
+  movies_id INT NOT NULL,
+  directors_id INT NOT NULL,
+  PRIMARY KEY (movies_id, directors_id)
+    -- FOREIGN KEY (movies_id),
+    -- FOREIGN KEY (directors_id)
+);
 
 
 -- -----------------------------------------------------
