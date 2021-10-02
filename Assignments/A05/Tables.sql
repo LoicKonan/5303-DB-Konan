@@ -3,7 +3,6 @@
 -- Model: New Model    Version: 1.0
 
 
-
 -- -----------------------------------------------------
 -- Table `movies`
 -- -----------------------------------------------------
@@ -71,7 +70,7 @@ CREATE TABLE rating
   votes INT NOT NULL,
   numb_stars INT NOT NULL,
   movies_id INT NOT NULL,
---   FOREIGN KEY (movies_id)
+  PRIMARY KEY (movies_id)
 );
 
 
