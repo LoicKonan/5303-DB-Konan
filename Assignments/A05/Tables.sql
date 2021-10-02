@@ -88,73 +88,46 @@ CREATE TABLE movies_directors
 
 
 -- -----------------------------------------------------
--- Table `movies_db`.`movies_actors`
+-- Table movies_actors
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `movies_db`.`movies_actors` (
-  `movies_id` INT NOT NULL,
-  `actors_id` INT NOT NULL,
-  PRIMARY KEY (`movies_id`, `actors_id`),
-  INDEX `fk_movies_has_actors_actors1_idx` (`actors_id` ASC) VISIBLE,
-  INDEX `fk_movies_has_actors_movies1_idx` (`movies_id` ASC) VISIBLE,
-  CONSTRAINT `fk_movies_has_actors_movies1`
-    FOREIGN KEY (`movies_id`)
-    REFERENCES `movies_db`.`movies` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_movies_has_actors_actors1`
-    FOREIGN KEY (`actors_id`)
-    REFERENCES `movies_db`.`actors` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+CREATE TABLE movies_actors
+(
+  movies_id INT NOT NULL,
+  actors_id INT NOT NULL,
+  PRIMARY KEY (movies_id, actors_id)
+    -- FOREIGN KEY (movies_id)
+    -- FOREIGN KEY (actors_id)
+);
 
 
 -- -----------------------------------------------------
--- Table `movies_db`.`movies_writers`
+-- Table movies_writers
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `movies_db`.`movies_writers` (
-  `movies_id` INT NOT NULL,
-  `writers_id` INT NOT NULL,
-  PRIMARY KEY (`movies_id`, `writers_id`),
-  INDEX `fk_movies_has_writers_writers1_idx` (`writers_id` ASC) VISIBLE,
-  INDEX `fk_movies_has_writers_movies1_idx` (`movies_id` ASC) VISIBLE,
-  CONSTRAINT `fk_movies_has_writers_movies1`
-    FOREIGN KEY (`movies_id`)
-    REFERENCES `movies_db`.`movies` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_movies_has_writers_writers1`
-    FOREIGN KEY (`writers_id`)
-    REFERENCES `movies_db`.`writers` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+CREATE TABLE movies_writers
+(
+  movies_id INT NOT NULL,
+  writers_id INT NOT NULL,
+  PRIMARY KEY (movies_id, `writers_id),
+    -- FOREIGN KEY (movies_id)
+    -- FOREIGN KEY (writers_id)
+);
 
 
 -- -----------------------------------------------------
--- Table `movies_db`.`movies_genres`
+-- Table movies_genres
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `movies_db`.`movies_genres` (
-  `movies_id` INT NOT NULL,
-  `genres_id` INT NOT NULL,
-  PRIMARY KEY (`movies_id`, `genres_id`),
-  INDEX `fk_movies_has_genres_genres1_idx` (`genres_id` ASC) VISIBLE,
-  INDEX `fk_movies_has_genres_movies1_idx` (`movies_id` ASC) VISIBLE,
-  CONSTRAINT `fk_movies_has_genres_movies1`
-    FOREIGN KEY (`movies_id`)
-    REFERENCES `movies_db`.`movies` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_movies_has_genres_genres1`
-    FOREIGN KEY (`genres_id`)
-    REFERENCES `movies_db`.`genres` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+CREATE TABLE movies_genres
+(
+  movies_id INT NOT NULL,
+  genres_id INT NOT NULL,
+  PRIMARY KEY (movies_id, genres_id),
+    -- FOREIGN KEY (movies_id)
+    -- FOREIGN KEY (genres_id)
+   );
 
 
 -- -----------------------------------------------------
--- Table `movies_db`.`person`
+-- Table person
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `movies_db`.`person` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -214,9 +187,10 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `movies_db`.`person_actors`
+-- Table person_actors
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `movies_db`.`person_actors` (
+CREATE TABLE person_actors
+(
   `person_id` INT NOT NULL,
   `actors_id` INT NOT NULL,
   PRIMARY KEY (`person_id`, `actors_id`),
@@ -229,29 +203,17 @@ CREATE TABLE IF NOT EXISTS `movies_db`.`person_actors` (
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_person_has_actors_actors1`
     FOREIGN KEY (`actors_id`)
-    REFERENCES `movies_db`.`actors` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+   );
 
 
 -- -----------------------------------------------------
--- Table `movies_db`.`person_writers`
+-- Table person_writers
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `movies_db`.`person_writers` (
-  `person_id` INT NOT NULL,
-  `writers_id` INT NOT NULL,
-  PRIMARY KEY (`person_id`, `writers_id`),
-  INDEX `fk_person_has_writers_writers1_idx` (`writers_id` ASC) VISIBLE,
-  INDEX `fk_person_has_writers_person1_idx` (`person_id` ASC) VISIBLE,
-  CONSTRAINT `fk_person_has_writers_person1`
-    FOREIGN KEY (`person_id`)
-    REFERENCES `movies_db`.`person` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_person_has_writers_writers1`
-    FOREIGN KEY (`writers_id`)
-    REFERENCES `movies_db`.`writers` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+CREATE TABLE person_writers
+(
+  person_id INT NOT NULL,
+  writers_id INT NOT NULL,
+  PRIMARY KEY (person_id, writers_id),
+    -- FOREIGN KEY (person_id)
+    -- FOREIGN KEY (writers_id)
+);
