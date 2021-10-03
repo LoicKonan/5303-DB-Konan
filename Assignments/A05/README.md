@@ -19,7 +19,7 @@
 | :---: | -------------------------- | ----------------------------------------------- | ----------------------- |
 |   1   | [main.py](main.py)         | Main Python file to help connect to my database | :ballot_box_with_check: |
 |   2   | [mysqlCnx.py](mysqlCnx.py) | The mysql connection file                       | :ballot_box_with_check: |
-|   3   | [Table.sql]([Table.sql)    | The SQL code                                    | :ballot_box_with_check: |
+|   3   | [Tables.sql]([Tables.sql)  | The SQL code                                    | :ballot_box_with_check: |
 
 ### Schema
 
