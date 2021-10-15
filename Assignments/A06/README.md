@@ -4,9 +4,11 @@
 
 #### Description
 
--
-
-- <http://192.81.216.230:8003/>
+> - Api will run on port 8003 on this server.<http://192.81.216.230:8003/>
+> - Loaded the restaurant DataBase [restaurant.json](restaurant.json) on my server using MongoDB.
+> - Any Data returned by a route will be paginated with a preset page size.
+> - 
+> -  
 
 ### Files
 
@@ -23,5 +25,5 @@
 |   1   | [https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04)                                                                   | Install MongoDB              | :ballot_box_with_check: |
 |   2   | [https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04)                           | Remote Access for MongoDB    | :ballot_box_with_check: |
 |   3   | [https://www.digitalocean.com/community/tutorials/how-to-perform-crud-operations-in-mongodb-using-pymongo-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-perform-crud-operations-in-mongodb-using-pymongo-on-ubuntu-20-04) | Py Mongo                     | :ballot_box_with_check: |
-|   4   | [https://cs.msutexas.edu/~griffin/data/FoodData/resaurant_updated_coord.json](https://cs.msutexas.edu/~griffin/data/FoodData/resaurant_updated_coord.json)                                                                                           | Database for the Restaurants | :ballot_box_with_check: |
+|   4   | [restaurant.json](restaurant.json) | Database for the Restaurants | :ballot_box_with_check: |
 |   5   | [https://docs.mongodb.com/mongodb-shell/crud/read/#std-label-mongosh-read](https://docs.mongodb.com/mongodb-shell/crud/read/#std-label-mongosh-read)                                                                                                 | Query Documents              | :ballot_box_with_check: |
