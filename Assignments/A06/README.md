@@ -7,7 +7,7 @@
 > - Api will run on port 8003 on this server **<http://192.81.216.230:8003/>**
 > - Loaded the restaurant DataBase [restaurant.json](restaurant.json) on my server using MongoDB.
 > - Any Data returned by a route will be paginated with a preset page size.
-> -
+
 > - **Routes:**
 >   - Restaurants
 >     - All restaurants (paginated result).
@@ -17,7 +17,6 @@
 >     - All restaurants near Point(x,y).
 >     - All restaurants with a min rating of X.
 >
-
 
 ### Files
 
