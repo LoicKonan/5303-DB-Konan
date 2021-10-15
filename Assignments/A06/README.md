@@ -12,9 +12,9 @@
 
 |   #   | File | Description | Status                  |
 | :---: | ---- | ----------- | ----------------------- |
-|   1   | []() |             | :ballot_box_with_check: |
-|   2   | []() |             | :ballot_box_with_check: |
-|   3   | []() |             | :ballot_box_with_check: |
+|   1   | [helper.py](helper.py) | Helper code            | :ballot_box_with_check: |
+|   2   | [restaurant.json](restaurant.json) | Restaurants DataBase            | :ballot_box_with_check: |
+|   3   | [test.py](test.py) | Helper python code           | :ballot_box_with_check: |
 
 ### References
 
