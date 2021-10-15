@@ -4,14 +4,14 @@
 
 #### Description
 
-> Created a local database of the movie data using the files located at the following address: <https://datasets.imdbws.com/>.
+> Created a local database of the movie data using the files located at the following address: **<https://datasets.imdbws.com/>**.
 >
 > - Retrieved all files.
 > - Uncompressed the files.
 > - Processed each file into a usable format.
 > - Re-Organized the files by filtering / combining them to fit a schema.
 >
-> - Routes: <http://192.81.216.230:8002/>
+> - Routes: **<http://192.81.216.230:8002/>**
 
 ### Files
 
