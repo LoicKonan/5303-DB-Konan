@@ -10,12 +10,12 @@
 > -
 > - **Routes:**
 >   - Restaurants
->       - All restaurants (paginated result).
->       - Unique restaurant categories.
->       - All restaurants in a category.
->       - All restaurants in a list of 1 or more zip codes.
->       - All restaurants near Point(x,y).
->       - All restaurants with a min rating of X.
+>     - All restaurants (paginated result).
+>     - Unique restaurant categories.
+>     - All restaurants in a category.
+>     - All restaurants in a list of 1 or more zip codes.
+>     - All restaurants near Point(x,y).
+>     - All restaurants with a min rating of X.
 >
 
 
