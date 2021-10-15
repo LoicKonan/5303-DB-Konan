@@ -10,12 +10,12 @@
  
 ### Files
 
-|   #   | File                               | Description                                     | Status                  |
-| :---: | ---------------------------------- | ----------------------------------------------- | ----------------------- |
-|   1   | [Sql_Zoo_Answers](Sql_Zoo_Answers) | The answers for the SqlZoo website              | :ballot_box_with_check: |
+|   #   | File                               | Description                        | Status                  |
+| :---: | ---------------------------------- | ---------------------------------- | ----------------------- |
+|   1   | [Sql_Zoo_Answers](Sql_Zoo_Answers) | The answers for the SqlZoo website | :ballot_box_with_check: |
 
 ### References
 
-|   #   | File                                                                                                   | Description               | Status                  |
-| :---: | ------------------------------------------------------------------------------------------------------ | ------------------------- | ----------------------- |
-|   1   | [https://realpython.com/python-mysql](https://realpython.com/python-mysql)                             | python-mysql              | :ballot_box_with_check: |
+|   #   | File                                                                       | Description  | Status                  |
+| :---: | -------------------------------------------------------------------------- | ------------ | ----------------------- |
+|   1   | [https://realpython.com/python-mysql](https://realpython.com/python-mysql) | python-mysql | :ballot_box_with_check: |
