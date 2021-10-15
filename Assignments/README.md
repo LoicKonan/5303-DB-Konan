@@ -7,3 +7,4 @@
 | [03](http://192.81.216.230/index.html) | [A03](http://192.81.216.230/index.html) | [Create server (Digital Ocean).](http://192.81.216.230/index.html)|:heavy_check_mark:|
 | [04](./A04) | [A04](./A04) | [SqlZoo Answers](./A04) |:heavy_check_mark:|
 | [05](./A05) | [A05](./A05) | [Movies DB.](./A05) |:heavy_check_mark:|
+| [06](./A06) | [A06](./A06) | [Restaurants DB.](./A0) |:heavy_check_mark:|
