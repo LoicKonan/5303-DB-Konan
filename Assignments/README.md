@@ -9,4 +9,4 @@
 | [05](./A05) | [A05](./A05) | [Movies DB.](./A05)      |:heavy_check_mark:|
 | [06](./A06) | [A06](./A06) | [Restaurants DB.](./A06) |:heavy_check_mark:|
 | [07](./A07) | [A07](./A07) | [Advising Project.](./A07)      |:heavy_check_mark:|
-| [08](./A08) | [A07](./A08) | [Redis Project.](./A08) |:heavy_check_mark:|
+| [08](./A08) | [A08](./A08) | [Redis Project.](./A08) |:heavy_check_mark:|
