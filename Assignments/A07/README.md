@@ -10,7 +10,7 @@
 
 |   #   | File                               | Description          | Status                  |
 | :---: | ---------------------------------- | -------------------- | ----------------------- |
-|   1   | [helper.py](helper.py)             | Helper code          | :ballot_box_with_check: |
+|   1   | [main.py](main.py)             | Helper code          | :ballot_box_with_check: |
 
 ### References
 
