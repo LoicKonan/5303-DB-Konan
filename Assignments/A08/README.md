@@ -17,33 +17,35 @@ You should vary N and n to determine whether each database performs differently 
 - Set N, where N is number of items being inserted, to:
   - 50000
   - 100000
-500000
-1 Million
-Possibly more depending on server specs
-Then using a percentage of N to determine how many transactions of different types to run, you can tailor the load on the database (document store, key value store). For example you can increase or decrease specific transaction types for each experiment before moving onto the next transaction type:
-Run 1
-Searches = .5 * N
-Updates = 1.5 * N
-Deletes = .25 * N
-Run 2
-Searches = .75 * N
-Updates = 1.5 * N
-Deletes = .25 * N
-Run 3
-Searches = 1 * N
-Updates = 1.5 * N
-Deletes = .25 * N
-Run N
-etc.
+  - 500000
+  - 1 Million
+  - Possibly more depending on server specs
+  
+- Then using a percentage of N to determine how many transactions of different types to run, you can tailor the load on the database (document store, key value store). 
+- For example you can increase or decrease specific transaction types for each experiment before moving onto the next transaction type:
+
+- Run 1
+  - Searches = .5 * N
+  - Updates = 1.5 * N
+  - Deletes = .25 * N
+- Run 2
+  - Searches = .75 * N
+  - Updates = 1.5 * N
+  - Deletes = .25 * N
+- Run 3
+  - Searches = 1 * N
+  - Updates = 1.5 * N
+  - Deletes = .25 * N
+- Run N
+  - etc.
 By organizing the amounts for each transaction type before hand, you can structure your experiments and save results much easier.
 
 However, this approach is feasible:
 
-Run X
-Searches = random(0.25 , 3.0) * N
-Updates = random(0.25 , 3.0) * N
-Deletes = random(0.25 , 0.75) * N
-I'm sure your groups will come with good experiments. Just get creative.
+- Run X
+  - Searches = random(0.25 , 3.0) * N
+  - Updates = random(0.25 , 3.0)* N
+  - Deletes = random(0.25 , 0.75) * N
 
 ### Files
 
