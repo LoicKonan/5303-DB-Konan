@@ -8,11 +8,11 @@
 
 ### Files
 
-|   #   | File                         | Description      | Status                  |
-| :---: | ---------------------------- | ---------------- | ----------------------- |
-|   1   | [main.py](main.py)           | Helper code      | :ballot_box_with_check: |
-|   2   | [get_data.php](get_data.php) | Loading the data | :ballot_box_with_check: |
-|   3   | [data](data)                 | 100 data         | :ballot_box_with_check: |
+|   #   | File                         | Description             | Status                  |
+| :---: | ---------------------------- | ----------------------- | ----------------------- |
+|   1   | [main.py](main.py)           | Helper code             | :ballot_box_with_check: |
+|   2   | [get_data.php](get_data.php) | Helper to Load the data | :ballot_box_with_check: |
+|   3   | [data](data)                 | Data Folder             | :ballot_box_with_check: |
 
 ### References
 
