@@ -21,7 +21,7 @@ def randomFloat(min,max,precision=2):
     """
     return round(random.uniform(min, max), precision)
 
-def experimentWeights(keys=["search","update","delete"]):
+def experimentWeights(keys = ["search","update","delete"]):
     """
     This method returns random percentages summing to 1 for any number of 
     keys provided in a dictionary.
