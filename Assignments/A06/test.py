@@ -6,3 +6,5 @@ client = pymongo.MongoClient('localhost', username='adminguru', password=getpass
 db = client.workplace
 
 employees = db.employees
+
+
