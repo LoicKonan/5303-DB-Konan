@@ -2,9 +2,8 @@
 
 ### Loic Konan
 
-#### Description
-
-
+#### Descripti
+>
 > Created a local database of the movie data using the files located at the following address: **<https://datasets.imdbws.com/>**.
 >
 > - Retrieved all files.
