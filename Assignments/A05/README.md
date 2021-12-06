@@ -18,7 +18,7 @@
 >
 > - **<http://192.81.216.230:8002/>**
 >
-> - ## Routes:
+> - ## Routes
 >
 > - Movies
 >   - Find all
