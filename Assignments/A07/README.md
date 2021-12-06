@@ -30,4 +30,4 @@
 
 |   #   | File                                     | Description   | Status                  |
 | :---: | ---------------------------------------- | ------------- | ----------------------- |
-|   1   | [https://vuejs.org/](https://vuejs.org/) | Frontend code | :ballot_box_with_check: |
+|   1   | [https://vuejs.org/](https://vuejs.org/) | Frontend Help | :ballot_box_with_check: |
