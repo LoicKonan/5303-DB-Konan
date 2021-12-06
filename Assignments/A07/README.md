@@ -24,10 +24,10 @@
 |   #   | File                   | Description  | Status                  |
 | :---: | ---------------------- | ------------ | ----------------------- |
 |   1   | [main.py](main.py)     | Helper code  | :ballot_box_with_check: |
-|   1   | [schedules](schedules) | loading data | :ballot_box_with_check: |
+|   2   | [schedules](schedules) | loading data | :ballot_box_with_check: |
 
 ### References
 
-|   #   | File | Description | Status                  |
-| :---: | ---- | ----------- | ----------------------- |
-|   1   |      |             | :ballot_box_with_check: |
+|   #   | File                                     | Description   | Status                  |
+| :---: | ---------------------------------------- | ------------- | ----------------------- |
+|   1   | [https://vuejs.org/](https://vuejs.org/) | Frontend code | :ballot_box_with_check: |
