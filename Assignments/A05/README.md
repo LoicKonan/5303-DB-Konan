@@ -44,8 +44,8 @@
 >   - Profession
 >     - Find all
 >
-> - <img src="sqlRedis.jpg">
-> - <img src="mongo.jpg">
+> - <img src="sqlRedis.png">
+> - <img src="mongo.png">
 >
 >
 
