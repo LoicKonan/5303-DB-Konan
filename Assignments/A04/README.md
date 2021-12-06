@@ -6,9 +6,26 @@
 
 - Created a local database of the SqlZoo data using the data files located at the following address: **<https://cs.msutexas.edu/~griffin/data/SqlZoo/>**
 - Created Queries to answer each of the questions from this website **<https://sqlzoo.net>**
-
+- **Example:**
+-
 - **<http://192.81.216.230:8001/>**
- 
+  
+-
+>
+> - **GET Routes:**
+> - **Route:** http://Your.IP.Address:8001/basics/3
+
+
+
+> - **POST Routes:**
+
+
+> - **PUT Routes:**
+> - Update the world table.
+> - **Route:** <http://Your.IP.Address:8001/world/>
+
+
+
 ### Files
 
 |   #   | File                               | Description                                     | Status                  |
