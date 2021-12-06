@@ -35,7 +35,6 @@ app = FastAPI()
 @app.get("/")
 async def root(request: Request):
     return {
-        #"Listing of all routes": request.url_for("routes"),
         "URL for 'categories'": request.url_for("categories"),
         "URL for ''restaurants'": request.url_for("restaurants"),
         "URL for ''ratings' with value 13 for test": request.url_for("all_ratings", **{"rate": 13}),
