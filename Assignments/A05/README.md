@@ -17,10 +17,12 @@
 > Any data returned by a route will be paginated with a preset page size.
 >
 > - **Routes:** **<http://192.81.216.230:8002/>**
-
-
-
-
+> -
+> -
+> -
+> -
+>
+>
 ### Files
 
 |   #   | File                       | Description                                     | Status                  |
