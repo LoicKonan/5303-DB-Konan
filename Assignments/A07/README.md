@@ -55,15 +55,17 @@
 >
 > - ## Routes
 >
-> - POST
+> - **POST**
 > - Add course
 > - Add student
 > - Add advising form
-> - PUT
+>
+> - **PUT**
 > - Edit Course
 > - Edit Student
 > - Edit Form
-> - GET
+>
+> - **GET**
 > - Student Based Routes
 > - Get list of students
 > - Get students by:
