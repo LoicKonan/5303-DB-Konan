@@ -27,7 +27,7 @@
 >
 > - Insert a new row into the teachers table.
 >
-> - **Route:** <http://192.81.216.230:8001/teacher/>
+> - **Route:** <http://192.81.216.230:8001/nobel/5>
 > <img src="post.png">
 >
 > ### PUT Routes
