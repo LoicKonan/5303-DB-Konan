@@ -47,6 +47,13 @@ However, this approach is feasible:
   - Updates = random(0.25 , 3.0)* N
   - Deletes = random(0.25 , 0.75) * N
 
+
+> - <img src="sqlRedis.png">
+> - <img src="mongo.png">
+>
+>
+>
+>
 ### Files
 
 |   #   | File                         | Description             | Status                  |

@@ -44,9 +44,6 @@
 >   - **Profession**
 >     - _**Find all**_
 >
-> - <img src="sqlRedis.png">
-> - <img src="mongo.png">
->
 >
 
 ### Files
