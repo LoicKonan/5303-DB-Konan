@@ -5,6 +5,7 @@
 #### Description
 
 - Created a local database of the SqlZoo data using the data files located at the following address: **<https://cs.msutexas.edu/~griffin/data/SqlZoo/>**
+<<<<<<< HEAD
 - Created Queries to answer each of the questions from this website **<https://sqlzoo.net>**
 - **Example:**
 -
@@ -26,14 +27,49 @@
 
 
 
+=======
+  
+- Created _**GET routes, and a POST and PUT routes**_ to answer each of the questions from this website **<https://sqlzoo.net>**
+  
+> - ### Example
+>
+>
+> - **<http://192.81.216.230:8001/docs/>**
+>
+>  <img src="fastApi.png">
+>
+>
+> ### GET Routes
+>
+> - **Route:** <http://192.81.216.230:8001/basics/3>
+> <img src="get.png">
+>
+> - **Route:** <http://192.81.216.230:8001/sum_and_count/5>
+> <img src="get1.png">
+>
+> ### POST Routes
+>
+> - Insert a new row into the teachers table.
+>
+> - **Route:** <http://192.81.216.230:8001/nobel/6>
+> <img src="post.png">
+>
+> ### PUT Routes
+>
+> - Update the world table.
+>
+> - **Route:** <http://192.81.216.230:8001/world/6>
+>  <img src="put.png">
+>
+>
+>>>>>>> 24b33a4260149bbc02eae7ae62dd3f78aede2575
 ### Files
 
 |   #   | File                               | Description                                     | Status                  |
 | :---: | ---------------------------------- | ----------------------------------------------- | ----------------------- |
 |   1   | [Sql_Zoo_Answers](Sql_Zoo_Answers) | The answers for the SqlZoo website              | :ballot_box_with_check: |
 |   2   | [main.py](main.py)                 | Main Python file to help connect to my database | :ballot_box_with_check: |
-|   3   | [main2.py](main2.py)               | Python file to help connect to my database      | :ballot_box_with_check: |
-|   4   | [mysqlCnx.py](mysqlCnx.py)         | The mysql connection file                       | :ballot_box_with_check: |
+|   3   | [mysqlCnx.py](mysqlCnx.py)         | The mysql connection file                       | :ballot_box_with_check: |
 
 ### References
 

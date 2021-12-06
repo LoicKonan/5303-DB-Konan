@@ -1,101 +1,180 @@
 import json
+import mysql.connector
+import time
 import random
+import redis
+import pymongo
 
-# Number of records to insert initially
-N = [50000,100000,500000,10000000]
+jsonfile = open('data.json', 'r')
+jsondata = json.load(jsonfile)
 
-heavy_range =  [.50,.70]
-medium_range = [.30,.49]
-light_range =  [.10,.39]
+config = {
+  'user': 'root',
+  'password': 'root',
+  'host': 'localhost',
+  'unix_socket': '/Applications/MAMP/tmp/mysql/mysql.sock',
+  'database': 'testing',
+  'raise_on_warnings': True
+}
 
-def randomFloat(min,max,precision=2):
-    """Generates a random float between two values
+cnx = mysql.connector.connect(**config)
 
-    Args:
-        (float) min                 : minimum range value
-        (float) max                 : maximum range value
-        (int, optional) precision   : decimal places to round to. Defaults to 2.
+cursor = cnx.cursor(dictionary=True)
 
-    Returns:
-        (float): Random floating point
-    """
-    return round(random.uniform(min, max), precision)
-
-def experimentWeights(keys = ["search","update","delete"]):
-    """
-    This method returns random percentages summing to 1 for any number of 
-    keys provided in a dictionary.
-
-    @params:
-        (dict) items    : dictionary of keys in which to populate with percentages adding to 1
-
-    @returns:
-        dict            : dictionary with keys and values 
-
-    @example:
-        Given:
-            vals = ["search","update","delete"]
-        Returns:
-            vals = {"search":.19,"update":.61,"delete":.20}
-    """
-
-    random.shuffle(keys)
-
-    results = {}
-    
-
-    while(1):
-        weights = []
-        one = 1.0
-        weights.append(randomFloat(heavy_range[0],heavy_range[1]))
-        one -= weights[0]
-        r =  random.random()
-        weights.append(round(one*r,2))
-        weights.append(round((1-r)*one,2))
-
-        toosmall = False
-        for i in weights:
-            if i < .05:
-                toosmall = True
-        if not toosmall:
+print('Mysql Insertion Testing')
+for N in (50000,100000,500000,10000000):
+    cursor.execute('DELETE FROM mytable')
+    cnx.commit()
+    start = time.time()
+    for i, rows in enumerate(jsondata):
+        cursor.execute('INSERT INTO mytable VALUES (%s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s,%s,%s)', [rows['id'], rows['first_name'], rows['last_name'], rows['email'], rows['city'],rows['state'],rows['address'],rows['latitude'],rows['longitude'],rows['car'],rows['car_model'],rows['car_color'],rows['searchval']])
+        cnx.commit()
+        if i == N - 1:
             break
+    end = time.time()
+    print('MYSql took ', end-start, 'seconds to insert ', N)
 
-    for k in keys:
-        results[k] = weights.pop()
-    
-    return results
+print('Mysql Single Selection Testing')
+cursor = cnx.cursor(buffered=True)
+for N in (5,10,500,1000):
+    start = time.time()
+    for i in range(1,N + 1):
+        cursor.execute('SELECT * FROM mytable WHERE id = %s', [random.randint(1, 1000)])
+    end = time.time()
+    print('MySql took ', end-start, ' seconds to search ', N, '--> Single select on id basis')    
 
-"""
-Adjust your experiments by mixing and matching the above lists
-    for example our first run will be heavy searching, medium updates, and light deletes
-    and the last run will be light searches, heavy updates, and medium deletes
+print('Mysql Multi Selection Testing')
+cursor = cnx.cursor(buffered=True)
+for N in (5,10,500,1000):
+    start = time.time()
+    for i in range(1,N + 1):
+        cursor.execute('SELECT * FROM mytable ')
+    end = time.time()
+    print('MySql took ', end-start, ' seconds to search ', N, '--> Full Select')   
 
-You can add as well as mix and match to adjust what you want to do.
+print('Mysql Updation Testing')
+for N in (5,10,500,1000):
+    start = time.time()
+    for i in range(1,N + 1):
+        cursor.execute('UPDATE mytable SET city = %s WHERE id = %s', [random.randint(1, 1000), random.randint(1, 1000)])
+        cnx.commit()
+    end = time.time()
+    print('MySql took ', end-start, ' seconds to update ', N, '--> Single Update')   
 
-Keep these lists the same length, or the driver below will break!
-"""
-# experiments = [
-#     {"search" : heavy, "updates" : medium, "deletes" : light},
-#     {"search" : heavy, "updates" : medium, "deletes" : light},
-#     {"search" : heavy, "updates" : medium, "deletes" : light},
-# ]
-# runs_list_length = 3 # This value is how long the lists above are. 
-
-# Instead of inerting all the records right off the bat, you could create another list 
-# called inserts and also perform inserts like you do the above searches updates and deletes
+print('Mysql Deletion Testing')
+for N in (5,10,500,1000):
+    start = time.time()
+    for i in range(1,N + 1):
+        cursor.execute('DELETE FROM mytable WHERE id = %s;', [random.randint(1, 1000)])
+        cnx.commit()
+    end = time.time()
+    print('MySql took ', end-start, ' seconds to delete ', N, '--> Single delete')   
 
 
-if __name__ == '__main__':
+redisdb = redis.Redis(host='localhost', port=6379, db=0)
+print('redis insertion Testing')
+for N in (50000,100000,500000,10000000):
+    redisdb.flushall()
+    start = time.time()
+    for i, rows in enumerate(jsondata):
+        redisdb.hset(rows['id'],  mapping={'first_name': rows['first_name'], 'last_name': rows['last_name'], 'email': rows['email'], 'city': rows['city'],'city': rows['state'],'address': rows['address'],'latitude': rows['latitude'],'longitude': rows['longitude'],'car': rows['car'],'car_model': rows['car_model'],'car_color': rows['car_color'],'searchval': rows['searchval']    })
+        if i == N - 1:
+            break
+    end = time.time()
+    print('Redis took ', end-start, ' seconds to insert ', N)
 
-    print(experimentWeights(["search","update","delete"]))
+print('redis searching single Testing')
+for N in (50000,100000,500000,10000000):
+    start = time.time()
+    for i in range(1,N + 1):
+        redisdb.hgetall(random.randint(1, 1000))
+    end = time.time()
+    print('Redis took ', end-start, ' seconds to search ', N, ' single on id')
 
-    # keys = list(experiments.keys())
-    # for n in N:
-    #     print(n)
-    #     for k in keys:
-    #         print(k)
-    #         for i in experiments:
-    #             print(i)
-            
 
-        
+print('redis searching multiple Testing')
+for N in (50000,100000,500000,10000000):
+    start = time.time()
+    keys = redisdb.keys('*')
+    for i in range(1,N + 1):
+        for key in keys:
+            redisdb.hgetall(int(str(key)[2:-1]))
+    end = time.time()
+    print('Redis took ', end-start, ' seconds to search ', N, ' multisearch')
+
+print('redis updation Testing')
+for N in (50000,100000,500000,10000000):
+    start = time.time()
+    for i in range(1,N + 1):
+        key = random.randint(1, 1000)
+        row = redisdb.hgetall(key)
+        row[str.encode('city')] = str.encode(str(random.randint(1, 1000)))
+        redisdb.hset(key,  mapping= row)      
+    end = time.time()
+
+    print('Redis took ', end-start, ' seconds to update ', N, ' --> updation')
+
+print('redis deleition Testing')
+for N in (50000,100000,500000,10000000):
+    start = time.time()
+    for i in range(1,N + 1):
+        redisdb.delete(i)
+    end = time.time()
+    print('Redis took ', end-start, ' seconds to delete ', N, ' --> delete')
+
+mongocon = pymongo.MongoClient('mongodb://localhost:27017')
+mogodb = mongocon['testing']
+tablemongo = mogodb['mytable']
+
+print('mongo insertion Testing')
+for N in (50000,100000,500000,10000000):
+    tablemongo.drop()
+    start = time.time()
+    tablemongo.insert_many(jsondata[0:N])
+    end = time.time()
+    print('Mongo took ', end-start, ' seconds to insert ', N,'--> inserting')
+
+
+print('mongo insertion Testing')
+for N in (50000,100000,500000,10000000):
+    tablemongo.drop()
+    start = time.time()
+    tablemongo.insert_many(jsondata[0:N])
+    end = time.time()
+    print('Mongo took ', end-start, ' seconds to insert ', N,'--> inserting')
+
+
+print('mongo search single Testing')
+for N in (50000,100000,500000,10000000):
+    start = time.time()
+    for i in range(1,N + 1):
+        tablemongo.find({'id': random.randint(1, 1000)},{'_id': 0})
+    end = time.time()
+
+    print('MongoDB took ', end-start, ' seconds to search ', N, ' --> single search on id')
+
+
+print('mongo search multi Testing')
+for N in (50000,100000,500000,10000000):
+    start = time.time()
+    for i in range(1,N + 1):
+        tablemongo.find({},{'_id': 0})
+    end = time.time()
+    print('MongoDB took ', end-start, ' seconds to search ', N, ' --> multisearch full ')
+
+
+print('mongo updation Testing')
+for N in (50000,100000,500000,10000000):
+    start = time.time()
+    for i in range(1,N + 1):
+        tablemongo.update_one({'id': random.randint(1, 1000)}, {'$set':{'city':random.randint(1, 1000)}})
+    end = time.time()
+    print('MongoDB took ', end-start, ' seconds to update ', N, ' --> updation')
+
+print('mongo deletion Testing')
+for N in (50000,100000,500000,10000000):
+    start = time.time()
+    for i in range(1,N + 1):
+        tablemongo.delete_one({'id': i})
+    end = time.time()
+    print('MongoDB took ', end-start, ' seconds to delete ', N, ' --> delete')
