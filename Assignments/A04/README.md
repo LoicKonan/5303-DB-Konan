@@ -10,10 +10,12 @@
 >
 >
 > - **<http://192.81.216.230:8001/docs/>**
+> 
 >  <img src="fastApi.png">
 > 
 >
 > - **GET Routes:**
+> 
 > - **Route:** http://Your.IP.Address:8001/basics/3
 > <img src="get.png">
 > 
@@ -22,11 +24,13 @@
 >
 > - **POST Routes:**
 > - Insert a new row into the teachers table.
+> 
 > - **Route:** http://Your.IP.Address:8001/teacher/
 > <img src="post.png">
 >
 > - **PUT Routes:**
 > - Update the world table.
+> 
 > - **Route:** <http://Your.IP.Address:8001/world/>
 >  <img src="put.png">
 >
