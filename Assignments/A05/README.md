@@ -11,7 +11,15 @@
 > - Processed each file into a usable format.
 > - Re-Organized the files by filtering / combining them to fit a schema.
 >
-> - Routes: **<http://192.81.216.230:8002/>**
+> ## API
+>
+> This **Api** will run on **port 8002 the server**.
+> Any data returned by a route will be paginated with a preset page size.
+>
+> - **Routes:** **<http://192.81.216.230:8002/>**
+
+
+
 
 ### Files
 
