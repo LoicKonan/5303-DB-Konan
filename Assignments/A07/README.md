@@ -2,7 +2,7 @@
 
 ### Loic Konan
 
-#### Descripti
+#### Description
 >
 > Created a local database of the movie data using the files located at the following address: **<https://datasets.imdbws.com/>**.
 >
@@ -13,10 +13,10 @@
 >
 > ## API
 >
-> This **Api** will run on **port 8002 the server**.
+> This **Api** will run on **port 8004 the server**.
 > Any data returned by a route will be paginated with a preset page size.
 >
-> - **<http://192.81.216.230:8002/>**
+> - **<http://192.81.216.230:8004/>**
 >
 > - ## Routes
 >  - 
