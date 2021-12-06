@@ -34,7 +34,7 @@
 >
 > - Update the world table.
 >
-> - **Route:** <http://192.81.216.230:8001/world/>
+> - **Route:** <http://192.81.216.230:8001/world/10>
 >  <img src="put.png">
 >
 >
