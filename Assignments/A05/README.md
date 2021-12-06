@@ -20,9 +20,9 @@
 >
 > - ## Routes:
 >
->   - Movies
->     - Find all
->     - Filter on (any field in table)[year,runtime(min/max)]
+> - Movies
+>   - Find all
+>   - Filter on [any field in table](year,runtime(min/max))
 >            - e.g. return all movies in 1961
 >            - e.g. return all movies with runtime > 90
 >            - e.g. return all movies with runtime between 80 and 100
