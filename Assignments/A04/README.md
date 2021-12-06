@@ -16,6 +16,9 @@
 > - **GET Routes:**
 > - **Route:** http://Your.IP.Address:8001/basics/3
 > <img src="get.png">
+> 
+> - **Route:** http://Your.IP.Address:8001/sum_and_count/5
+> <img src="get1.png">
 >
 > - **POST Routes:**
 > - Insert a new row into the teachers table.
