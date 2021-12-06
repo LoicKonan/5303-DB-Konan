@@ -25,7 +25,8 @@
 > - End: End time (1220pm, etc.)
 > - Bldg: Abbreviation for building (MY, FA, BO, etc.),
 > - Room: Room number (136, 127A, etc.)
-> - Since one primary goal is to generate advising forms, we would need to store student information > - that could be used to populate form fields.
+> - Since one primary goal is to generate advising forms, we would need to
+> store student information that could be used to populate form fields.
 >
 > - Student Info
 > - First Name
@@ -37,7 +38,7 @@
 > - Github username
 > - Advising Form Info
 > - The only "report" I have a requirement for right now is an advising form.
-> - This will list the courses a student was advised to take in a given semester. 
+> - This will list the courses a student was advised to take in a given semester.
 > - The user should be able to lookup past forms and create new ones.
 >
 > - Semester
@@ -91,8 +92,6 @@
 > - Find form by semester
 > - Find form by year
 > - Find form with any combination of above (student, semester, year)
->
-> -
 >
 >
 
