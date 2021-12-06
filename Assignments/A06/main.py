@@ -45,26 +45,6 @@ async def root(request: Request):
        
     }
 
-# @app.get("/", response_class=HTMLResponse)
-# async def all_routes():
-#     all_routes ="""
-#         <a href= /categories> click for cuisine list</a><br>
-
-
-#         <a href= /resturants> click for resturants list and count</a><br>
-
-#         <a href= /rating/11> Ratings</a><br>
-        
-    
-#     """
-#     #    <a href= /rating> Ratings</a>
-    
-#     #note =f"Here is a list of all the routes.<br> " + all_routes
-    
-        
-#     return HTMLResponse(content=all_routes, status_code=200)
-
-
 
 @app.get("/categories", name= "categories")
 async def allcats():
@@ -122,8 +102,6 @@ async def location(latlong:distance):
        }
    },{"_id":0}
 ))
-    #print(latlong)
-
     res = {'result': query}
     
     return res
