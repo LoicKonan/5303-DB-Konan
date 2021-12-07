@@ -23,22 +23,30 @@
 > - <img src="sqlRedis.png"> <img src="mongo.png">
 >
 > When searching for a single values:
+> 
+>   - 
 <img src=".png">
 
 
 
 
 > When searching for multiple values:
+>
+>   -
 > <img src=".png">
 >
 
 
 > When updating to existing documents:
+>
+>   -
 > <img src=".png">
 >
 >
-> When Doing N deletes**
-> <img src=".png">
+> When Doing N deletes:
+>
+>   -
+> <img src="g.png">
 >
 >
 ### Files
