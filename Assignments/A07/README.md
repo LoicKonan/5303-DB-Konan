@@ -55,22 +55,22 @@
 > - ## Routes
 >
 > - **POST**
-> - Add course
-> - Add student
-> - Add advising form
+>   - Add course
+>   - Add student
+>   - Add advising form
 >
 > - **PUT**
-> - Edit Course
-> - Edit Student
-> - Edit Form
+>   - Edit Course
+>   - Edit Student
+>   - Edit Form
 >
 > - **GET**
-> - _**Student Based Routes**_
->   - Get list of students
->   - Get students by:
->     - Name
->     - M-Number
->     - Gpa (equal to or greater / less than)
+>   - _**Student Based Routes**_
+>     - Get list of students
+>     - Get students by:
+>       - Name
+>       - M-Number
+>       - Gpa (equal to or greater / less than)
 >
 > - **Course Based Routes**
 >   - Find course(s) by:
