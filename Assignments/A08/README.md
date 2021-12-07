@@ -35,9 +35,9 @@
 >
 > <img src="insertion.png">
 > When **updating to existing documents**:
->   - **MongoDB** is faster with the _**lowest time**_.
->   - **Reddis** is the _**second fastest**_.
->   - **Mysql** come in **_last place_**.
+>   - **Reddis** is _**faster**_.
+>   - **Mysql** is the _**second fastest**_.
+>   - **MongoDB** come in **_last place_**.
 >
 >
 > <img src="deletion.png">
