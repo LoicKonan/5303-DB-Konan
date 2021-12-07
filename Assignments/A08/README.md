@@ -21,7 +21,7 @@ You should vary N and n to determine whether each database performs differently 
   - 1 Million
   - Possibly more depending on server specs
   
-- Then using a percentage of N to determine how many transactions of different types to run, you can tailor the load on the database (document store, key value store). 
+- Then using a percentage of N to determine how many transactions of different types to run, you can tailor the load on the database (document store, key value store).
 - For example you can increase or decrease specific transaction types for each experiment before moving onto the next transaction type:
 
 - Run 1
@@ -47,9 +47,7 @@ However, this approach is feasible:
   - Updates = random(0.25 , 3.0)* N
   - Deletes = random(0.25 , 0.75) * N
 
-
-> - <img src="sqlRedis.png">
-> - <img src="mongo.png">
+> - <img src="sqlRedis.png"> <img src="mongo.png">
 >
 >
 >
