@@ -16,7 +16,7 @@
 > This **Api** will run on **port 8002 the server**.
 > Any data returned by a route will be paginated with a preset page size.
 >
-> - **<http://192.81.216.230:8002/>**
+> - **<http://killzombieswith.us:8000/docs/>**
 >
 > - ## Routes
 >
