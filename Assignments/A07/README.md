@@ -6,10 +6,12 @@
 >
 > - This project is a full stack web with Javascript and Vuejs.
 > - This uses a backend API and MongoDB as database.
+> - Ultimately the goal is to "query" the schedule looking for courses that fit some search criteria.
+> - Generate advising forms.
 >
-> - Ultimately the goal is to "query" the schedule looking for courses that fit some search criteria. > - Thats why we will save as much course data as we can glean from the published pdf.
 >
-> - Course Info
+> ### Course Info
+>
 > - Col: Abbreviation of College
 > - Crn: Unique identifier for a course
 > - Subj: Subject of course (CMPS, NURS, etc.)
@@ -25,10 +27,9 @@
 > - End: End time (1220pm, etc.)
 > - Bldg: Abbreviation for building (MY, FA, BO, etc.),
 > - Room: Room number (136, 127A, etc.)
-> - Since one primary goal is to generate advising forms, we would need to
-> store student information that could be used to populate form fields.
 >
-> - Student Info
+> ### Student Info
+>
 > - First Name
 > - Last Name
 > - M Number
@@ -36,10 +37,8 @@
 > - Email
 > - Gpa
 > - Github username
-> - Advising Form Info
-> - The only "report" I have a requirement for right now is an advising form.
-> - This will list the courses a student was advised to take in a given semester.
-> - The user should be able to lookup past forms and create new ones.
+>
+> ### Advising Form Info
 >
 > - Semester
 > - Year
