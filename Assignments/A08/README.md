@@ -28,9 +28,9 @@
 >
 > <img src="multi.png">
 > When **searching for multiple values****:
->   - **MongoDB** is faster with the _**lowest time**_.
->   - **Reddis** is the _**second fastest**_.
->   - **Mysql** come in **_last place_**.
+>   - **Mysql** is _**faster**_ when the _**size of N is smaller**_.
+>   - **MongoDB** is the _**fastest**_ when the _**size of N get bigger**_.
+>   - **Reddis** come in **_last place_**.
 >
 >
 > <img src="insertion.png">
