@@ -53,7 +53,6 @@
 >   -
 > <img src="update.png">
 >
-> <img src="sqlRedis.png"> <img src="mongo.png">
 
 ### Files
 
