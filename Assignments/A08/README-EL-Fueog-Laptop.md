@@ -1,0 +1,64 @@
+## Assignment 8 - Redis Project
+
+### Loic Konan
+
+#### Description
+
+> - To compare and see the distinctions between **Redis and MongoDB and Mysql**.
+> - This experiment should **time each transaction and calculate averages**.
+> - each aggregation should be applied to a database that is configured with **slight differences**.
+>
+> - Do **n searches for single values**.
+> - Do **n searches for multiple values**.
+> - Do **n updates to existing documents**.
+> - Do **n deletes**
+>
+> - One possible approach could be:
+>   - **Set N, where N is number of items being inserted, to:**
+>   - **50000**
+>   - **100000**
+>   - **500000**
+>   - **1 Million**
+>
+> - <img src="sqlRedis.png"> <img src="mongo.png">
+>
+> When searching for a single values:
+>
+>   - 
+<img src=".png">
+
+
+
+
+> When searching for multiple values:
+>
+>   -
+> <img src=".png">
+>
+
+
+> When updating to existing documents:
+>
+>   -
+> <img src=".png">
+>
+>
+> When Doing N deletes:
+>
+>   -
+> <img src="g.png">
+>
+>
+### Files
+
+|   #   | File                         | Description             | Status                  |
+| :---: | ---------------------------- | ----------------------- | ----------------------- |
+|   1   | [main.py](main.py)           | Helper code             | :ballot_box_with_check: |
+|   2   | [get_data.php](get_data.php) | Helper to Load the data | :ballot_box_with_check: |
+|   3   | [data](data)                 | Data Folder             | :ballot_box_with_check: |
+
+### References
+
+|   #   | File         | Description         | Status                  |
+| :---: | ------------ | ------------------- | ----------------------- |
+|   1   | [data](data) | Getting random data | :ballot_box_with_check: |
