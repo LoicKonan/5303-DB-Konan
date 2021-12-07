@@ -21,37 +21,47 @@
 >   - **1 Million**
 >
 > <img src="single.png">
+>
 > When **searching for a single values**:
->   - **MongoDB** is faster with the _**lowest time**_.
->   - **Redis** is the _**second fastest**_.
->   - **MySql** come in **_last place_**.
+>
+> - **MongoDB** is faster with the _**lowest time**_.
+> - **Redis** is the _**second fastest**_.
+> - **MySql** come in **_last place_**.
 >
 > <img src="multi.png">
+>
 > When **searching for multiple values****:
->   - **MySql** is _**faster**_ when the _**size of N is smaller**_.
->   - **MongoDB** is the _**fastest**_ when the _**size of N get bigger**_.
->   - **Redis** come in **_last place_**.
+>
+> - **MySql** is _**faster**_ when the _**size of N is smaller**_.
+> - **MongoDB** is the _**fastest**_ when the _**size of N get bigger**_.
+> - **Redis** come in **_last place_**.
 >
 >
 > <img src="insertion.png">
+>
 > When **updating to existing documents**:
->   - **Redis** is _**faster**_.
->   - **MySql** is the _**second fastest**_.
->   - **MongoDB** come in **_last place_**.
+>
+> - **Redis** is _**faster**_.
+> - **MySql** is the _**second fastest**_.
+> - **MongoDB** come in **_last place_**.
 >
 >
 > <img src="deletion.png">
+>
 > When Doing **N deletes**:
->   - **Redis** is faster with the _**lowest time**_.
->   - **MySql** is the _**second fastest**_.
->   - **MongoDB** come in **_last place_**.
+>
+> - **Redis** is faster with the _**lowest time**_.
+> - **MySql** is the _**second fastest**_.
+> - **MongoDB** come in **_last place_**.
 >
 >
 > <img src="update.png">
+>
 > When Doing **N update**:
->   - **Redis** is faster with the _**lowest time**_.
->   - **MySql** is the _**second fastest**_.
->   - **MongoDB** come in **_last place_**.
+>
+> - **Redis** is faster with the _**lowest time**_.
+> - **MySql** is the _**second fastest**_.
+> - **MongoDB** come in **_last place_**.
 >
 >
 
