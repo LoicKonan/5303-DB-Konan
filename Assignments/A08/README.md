@@ -4,15 +4,14 @@
 
 #### Description
 
-> - This experiment should time each transaction and calculate averages.
-> - each aggregation should be applied to a database that is configured with slight differences.
+> - To compare and see the distinctions between **Redis and MongoDB and Mysql**.
+> - This experiment should **time each transaction and calculate averages**.
+> - each aggregation should be applied to a database that is configured with **slight differences**.
 >
-> ### Insert N objects
->
-> - Do n searches for single values (comprised of strings, int's, etc.)
-> - Do n searches for multiple values
-> - Do n updates to existing documents (or tuples, or data structures)
-> - Do n deletes
+> - Do **n searches for single values**.
+> - Do **n searches for multiple values**.
+> - Do **n updates to existing documents**.
+> - Do **n deletes**
 >
 > - One possible approach could be:
 >   - Set N, where N is number of items being inserted, to:
@@ -20,7 +19,6 @@
 >   - 100000
 >   - 500000
 >   - 1 Million
->   - Possibly more depending on server specs
 >
 > - <img src="sqlRedis.png"> <img src="mongo.png">
 >
