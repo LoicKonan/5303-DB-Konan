@@ -44,7 +44,7 @@
 > When Doing **N deletes**:
 >
 >   -
-> <img src="delete.png">
+> <img src="deletion.png">
 >
 >
 
