@@ -20,7 +20,6 @@
 >   - **500000**
 >   - **1 Million**
 >
->
 > When **searching for a single values**:
 >
 > -
@@ -54,6 +53,8 @@
 >   -
 > <img src="update.png">
 >
+> <img src="sqlRedis.png"> <img src="mongo.png">
+
 ### Files
 
 |   #   | File                         | Description             | Status                  |
