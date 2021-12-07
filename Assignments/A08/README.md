@@ -56,8 +56,7 @@
 > - **MongoDB** come in **_last place_**.
 > <img src="deletion.png">
 >
-> <br/>
-> <br/>
+<br/><br/>
 >
 > When Doing **N update**:
 >
