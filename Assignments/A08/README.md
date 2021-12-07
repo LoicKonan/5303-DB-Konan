@@ -24,7 +24,7 @@
 >
 > When **searching for a single values**:
 >
->   - 
+> -
 <img src=".png">
 >
 >
