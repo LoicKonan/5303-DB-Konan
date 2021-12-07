@@ -25,7 +25,7 @@
 > When **searching for a single values**:
 >
 > -
-> <img src=".png">
+> <img src="single.png">
 > -
 >
 >
@@ -33,21 +33,27 @@
 > When **searching for multiple values****:
 >
 >   -
-> <img src=".png">
+> <img src="multi.png">
 >
 >
 >
 > When **updating to existing documents**:
 >
 >   -
-> <img src=".png">
+> <img src="update.png">
 >
 >
 > When Doing **N deletes**:
 >
 >   -
-> <img src="g.png">
+> <img src="delete.png">
 >
+>
+
+> When Doing **N update**:
+>
+>   -
+> <img src="update.png">
 >
 ### Files
 
