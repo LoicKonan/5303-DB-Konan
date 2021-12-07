@@ -21,7 +21,6 @@
 >   - **1 Million**
 \
 \
-\
 >
 > When **searching for a single values**:
 >
@@ -30,7 +29,8 @@
 > - **MySql** come in **_last place_**.
 > <img src="single.png">
 >
->
+\
+\
 > When **searching for multiple values****:
 >
 > - **MySql** is _**faster**_ when the _**size of N is smaller**_.
@@ -38,7 +38,8 @@
 > - **Redis** come in **_last place_**.
 > <img src="multi.png">
 >
->
+\
+\
 >
 > When **updating to existing documents**:
 >
@@ -47,7 +48,8 @@
 > - **MongoDB** come in **_last place_**.
 > <img src="insertion.png">
 >
->
+\
+\
 > When Doing **N deletes**:
 >
 > - **Redis** is faster with the _**lowest time**_.
@@ -55,7 +57,8 @@
 > - **MongoDB** come in **_last place_**.
 > <img src="deletion.png">
 >
->
+\
+\
 > When Doing **N update**:
 >
 > - **Redis** is faster with the _**lowest time**_.
