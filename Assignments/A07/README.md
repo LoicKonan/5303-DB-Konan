@@ -65,34 +65,32 @@
 > - Edit Form
 >
 > - **GET**
-> - Student Based Routes
-> - Get list of students
-> - Get students by:
-> - Name
-> - M-Number
-> - Gpa (equal to or greater / less than)
-> - Course Based Routes
-> - Find course(s) by
+> - _**Student Based Routes**_
+>   - Get list of students
+>   - Get students by:
+>     - Name
+>     - M-Number
+>     - Gpa (equal to or greater / less than)
 >
-> - CRN (unique id)
-> - Subj (subject)
-> - Crse (course number)
-> - Instructor Name
-> - Bldg (building)
+> - **Course Based Routes**
+>   - Find course(s) by:
+>     - CRN (unique id)
+>     - Subj (subject)
+>     - Crse (course number)
+>     - Instructor Name
+>     - Bldg (building)
+>
 > - Find courses between Begin & End times
->
 > - Find closed courses
->
 > - Find courses with a partial title search
->
 > - Find courses by Bldg (building) and Room
 >
-> - Advising Forms
-> - Find all advising forms
-> - Find form by student
-> - Find form by semester
-> - Find form by year
-> - Find form with any combination of above (student, semester, year)
+> - **Advising Forms**
+>   - Find all advising forms
+>   - Find form by student
+>   - Find form by semester
+>   - Find form by year
+>   - Find form with any combination of above (student, semester, year)
 >
 >
 
