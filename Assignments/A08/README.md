@@ -23,35 +23,35 @@
 > <img src="single.png">
 > When **searching for a single values**:
 >   - **MongoDB** is faster with the _**lowest time**_.
->   - **Reddis** is the _**second fastest**_.
->   - **Mysql** come in **_last place_**.
+>   - **Redis** is the _**second fastest**_.
+>   - **MySql** come in **_last place_**.
 >
 > <img src="multi.png">
 > When **searching for multiple values****:
->   - **Mysql** is _**faster**_ when the _**size of N is smaller**_.
+>   - **MySql** is _**faster**_ when the _**size of N is smaller**_.
 >   - **MongoDB** is the _**fastest**_ when the _**size of N get bigger**_.
->   - **Reddis** come in **_last place_**.
+>   - **Redis** come in **_last place_**.
 >
 >
 > <img src="insertion.png">
 > When **updating to existing documents**:
->   - **Reddis** is _**faster**_.
->   - **Mysql** is the _**second fastest**_.
+>   - **Redis** is _**faster**_.
+>   - **MySql** is the _**second fastest**_.
 >   - **MongoDB** come in **_last place_**.
 >
 >
 > <img src="deletion.png">
 > When Doing **N deletes**:
->   - **MongoDB** is faster with the _**lowest time**_.
->   - **Reddis** is the _**second fastest**_.
->   - **Mysql** come in **_last place_**.
+>   - **Redis** is faster with the _**lowest time**_.
+>   - **MySql** is the _**second fastest**_.
+>   - **MongoDB** come in **_last place_**.
 >
 >
 > <img src="update.png">
 > When Doing **N update**:
->   - **MongoDB** is faster with the _**lowest time**_.
->   - **Reddis** is the _**second fastest**_.
->   - **Mysql** come in **_last place_**.
+>   - **Redis** is faster with the _**lowest time**_.
+>   - **MySql** is the _**second fastest**_.
+>   - **MongoDB** come in **_last place_**.
 >
 >
 
