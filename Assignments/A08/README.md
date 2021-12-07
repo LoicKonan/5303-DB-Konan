@@ -28,23 +28,30 @@
 >
 > <img src="multi.png">
 > When **searching for multiple values****:
-> - **MongoDB** is faster with the _**lowest time**_.
+>   - **MongoDB** is faster with the _**lowest time**_.
 >   - **Reddis** is the _**second fastest**_.
 >   - **Mysql** come in **_last place_**.
 >
 >
 > <img src="insertion.png">
 > When **updating to existing documents**:
->
+>   - **MongoDB** is faster with the _**lowest time**_.
+>   - **Reddis** is the _**second fastest**_.
+>   - **Mysql** come in **_last place_**.
 >
 >
 > <img src="deletion.png">
 > When Doing **N deletes**:
->
+>   - **MongoDB** is faster with the _**lowest time**_.
+>   - **Reddis** is the _**second fastest**_.
+>   - **Mysql** come in **_last place_**.
 >
 >
 > <img src="update.png">
 > When Doing **N update**:
+>   - **MongoDB** is faster with the _**lowest time**_.
+>   - **Reddis** is the _**second fastest**_.
+>   - **Mysql** come in **_last place_**.
 >
 >
 
