@@ -20,7 +20,6 @@
 >   - **500000**
 >   - **1 Million**
 >
-> <img src="sqlRedis.png"> <img src="mongo.png">
 >
 > When **searching for a single values**:
 >
