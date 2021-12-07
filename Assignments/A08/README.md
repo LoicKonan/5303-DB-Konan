@@ -20,38 +20,32 @@
 >   - **500000**
 >   - **1 Million**
 >
-> When **searching for a single values**:
->
-> -
 > <img src="single.png">
-> -
+> When **searching for a single values**:
+>   - **MongoDB** is faster with the _**lowest time**_.
+>   - **Reddis** is the _**second fastest**_.
+>   - **Mysql** come in **_last place_**.
 >
->
->
-> When **searching for multiple values****:
->
->   -
 > <img src="multi.png">
+> When **searching for multiple values****:
+> - **MongoDB** is faster with the _**lowest time**_.
+>   - **Reddis** is the _**second fastest**_.
+>   - **Mysql** come in **_last place_**.
 >
 >
->
+> <img src="insertion.png">
 > When **updating to existing documents**:
 >
->   -
-> <img src="insertion.png">
 >
 >
+> <img src="deletion.png">
 > When Doing **N deletes**:
 >
->   -
-> <img src="deletion.png">
 >
 >
-
+> <img src="update.png">
 > When Doing **N update**:
 >
->   -
-> <img src="update.png">
 >
 
 ### Files
