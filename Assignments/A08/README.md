@@ -38,7 +38,7 @@
 > When **updating to existing documents**:
 >
 >   -
-> <img src="update.png">
+> <img src="insertion.png">
 >
 >
 > When Doing **N deletes**:
