@@ -31,7 +31,7 @@
 >
 <br/><br/>
 >
-> When **searching for multiple values****:
+> When **searching for multiple values**:
 >
 > - **MySql** is _**faster**_ when the _**size of N is smaller**_.
 > - **MongoDB** is the _**fastest**_ when the _**size of N get bigger**_.
@@ -49,7 +49,7 @@
 >
 <br/><br/>
 >
-> When Doing **N deletes**:
+> When Doing **N deletes:
 >
 > - **Redis** is faster with the _**lowest time**_.
 > - **MySql** is the _**second fastest**_.
