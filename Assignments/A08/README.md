@@ -19,7 +19,7 @@
 >   - **100000**
 >   - **500000**
 >   - **1 Million**
-> 
+>
 <br/><br/>
 >
 > When **searching for a single values**:
@@ -65,7 +65,8 @@
 > - **MongoDB** come in **_last place_**.
 > <img src="update.png">
 >
-<br/><br/>
+> <br/>
+> <br/>
 
 ### Files
 
