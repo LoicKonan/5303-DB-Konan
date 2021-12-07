@@ -4,10 +4,10 @@
 
 #### Description
 >
-> - This project is a full stack web with Javascript and Vuejs.
-> - This uses a backend API and MongoDB as database.
-> - Ultimately the goal is to "query" the schedule looking for courses that fit some search criteria.
-> - Generate advising forms.
+> - This project is a **full stack web with Javascript and Vuejs**.
+> - This uses a **backend API and MongoDB as database**.
+> - Ultimately the goal is to **"query" the schedule looking for courses that fit some search criteria**.
+> - **Generate advising forms**.
 >
 >
 > ### Course Info
