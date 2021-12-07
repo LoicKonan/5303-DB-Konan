@@ -25,12 +25,12 @@
 > When **searching for a single values**:
 >
 > -
-<img src=".png">
+> <img src=".png">
+> -
 >
 >
 >
->
-> When **searching for multiple values**:
+> When **searching for multiple values****:
 >
 >   -
 > <img src=".png">
