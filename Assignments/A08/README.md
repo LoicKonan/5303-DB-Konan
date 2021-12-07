@@ -14,11 +14,11 @@
 > - Do **n deletes**
 >
 > - One possible approach could be:
->   - Set N, where N is number of items being inserted, to:
->   - 50000
->   - 100000
->   - 500000
->   - 1 Million
+>   - **Set N, where N is number of items being inserted, to:**
+>   - **50000**
+>   - **100000**
+>   - **500000**
+>   - **1 Million**
 >
 > - <img src="sqlRedis.png"> <img src="mongo.png">
 >
