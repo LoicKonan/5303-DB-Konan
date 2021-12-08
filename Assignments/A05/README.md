@@ -13,10 +13,10 @@
 >
 > ## API
 >
-> This **Api** will run on **port 8002 the server**.
+> This **Api** will run on **<http://killzombieswith.us:8000/docs/>**.
 > Any data returned by a route will be paginated with a preset page size.
 >
-> - **<http://killzombieswith.us:8000/docs/>**
+> <img src="movie.png">
 >
 > - ## Routes
 >
@@ -43,7 +43,8 @@
 >     - _**Find all**_
 >   - **Profession**
 >     - _**Find all**_
->
+> <img src="movie_.png">
+> <img src="movie__.png">
 >
 
 ### Files
