@@ -51,6 +51,7 @@
 > This **Api** will run on **port 8004 the server**.
 >
 > - **<http://192.81.216.230:8004/>**
+> <img src="A07.png">
 >
 > - ## Routes
 >
@@ -91,7 +92,7 @@
 >   - Find form by semester
 >   - Find form by year
 >   - Find form with any combination of above (student, semester, year)
->
+> <img src="Front-End.png">
 >
 
 ### Files
