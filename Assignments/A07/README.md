@@ -97,10 +97,14 @@
 
 ### Files
 
-|   #   | File                   | Description  | Status                  |
-| :---: | ---------------------- | ------------ | ----------------------- |
-|   1   | [main.py](main.py)     | Helper code  | :ballot_box_with_check: |
-|   2   | [schedules](schedules) | loading data | :ballot_box_with_check: |
+|   #   | File                                       | Description              | Status                  |
+| :---: | ------------------------------------------ | ------------------------ | ----------------------- |
+|   1   | [main.py](main.py)                         | Helper code              | :ballot_box_with_check: |
+|   2   | [schedules](schedules)                     | The data                 | :ballot_box_with_check: |
+|   3   | [normalize.py](normalize.py)               | Normalize the data       | :ballot_box_with_check: |
+|   4   | [schedules_models.py](schedules_models.py) | Schedule models          | :ballot_box_with_check: |
+|   5   | [schedules_routes.py](schedules_routes.py) | schedules for the routes | :ballot_box_with_check: |
+|   6   | [schedules_schema.py](schedules_schema.py) | The schedules Schema     | :ballot_box_with_check: |
 
 ### References
 
