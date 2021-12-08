@@ -13,8 +13,8 @@
 >
 > ## API
 >
-> This **Api** will run on **<http://killzombieswith.us:8000/docs/>**.
-> Any data returned by a route will be paginated with a preset page size.
+> - This **Api** will run on **<http://killzombieswith.us:8000/docs/>**.
+> - Any data returned by a route will be paginated with a preset page size.
 >
 > <img src="movie.png">
 >
