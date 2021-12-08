@@ -8,6 +8,8 @@
 > - Loaded the restaurant DataBase **([restaurant.json](restaurant.json))** on my server using MongoDB.
 > - Any Data returned by a route will be paginated with a preset page size.
 >
+> <img src="Restaurant.png">
+>
 > - **Routes:**
 >   - Restaurants
 >     - All restaurants (paginated result).
@@ -16,6 +18,8 @@
 >     - All restaurants in a list of 1 or more zip codes.
 >     - All restaurants near Point(x,y).
 >     - All restaurants with a min rating of X.
+> <img src="Restaurant2.png">
+> <img src="Restaurant3.png">
 >
 
 ### Files
