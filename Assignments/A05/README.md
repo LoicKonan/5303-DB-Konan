@@ -51,7 +51,6 @@
 
 |   #   | File                       | Description                                     | Status                  |
 | :---: | -------------------------- | ----------------------------------------------- | ----------------------- |
-|   1   | [main.py](main.py)         | Main Python file to help connect to my database | :ballot_box_with_check: |
 |   2   | [mysqlCnx.py](mysqlCnx.py) | The mysql connection file                       | :ballot_box_with_check: |
 
 ### References
